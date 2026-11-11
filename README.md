@@ -28,3 +28,12 @@ python3 scripts/update_tracker.py
 - API der Firma Tesla Robotaxi, LLC, öffentlich ohne Konto
 
 Dieses Projekt ist nicht von Tesla und nicht vom TxDMV herausgegeben.
+
+
+## Staaten-Datei für die Seite /tracker
+
+`states.json` fasst die Zeitreihe je Bundesstaat zusammen. Texas wird stündlich aus der TxDMV-Liste fortgeschrieben. Historische Texas-Punkte bis 10.11.2026 liegen fest in `data/tx-history-bootstrap.json` (robotaxistats, CC BY 4.0, plus ein Wayback-API-Snapshot) und werden nicht überschrieben.
+
+Andere Staaten stehen in `data/states-manuell.json` und werden nur von Hand geändert. Ohne belegte Fahrzeugzahl bleibt `current` leer und es gibt keine Linie im Chart. Bitte keine Schätzungen ohne Quelle eintragen.
+
+Die Seite darf `states.json` und `tracker.json` per raw.githubusercontent.com (Ausweichadresse jsDelivr) lesen. Bei Nutzung der historischen Texas-Werte muss robotaxistats mit Link und der Lizenz CC BY 4.0 genannt werden.

@@ -1,0 +1,339 @@
+{
+  "ok": true,
+  "last_updated": "2026-11-11T11:46:49Z",
+  "title": "Tesla-Robotaxis nach Bundesstaat",
+  "metric": "Zugelassene Tesla-Robotaxis, soweit amtlich belegt. Das ist nicht die Zahl der Autos auf der Straße.",
+  "y_axis": "Die Y-Achse richtet sich nach dem Staat mit der höchsten belegten Zahl (aktuell Texas).",
+  "attribution": {
+    "text": "Historische Texas-Werte: robotaxistats, CC BY 4.0, Primärquelle Texas DMV (TxMCCS). Aktueller Texas-Stand: eigener Abruf der öffentlichen TxDMV-Liste.",
+    "url": "https://www.robotaxistats.com/",
+    "license": "CC BY 4.0",
+    "source_page": "https://www.robotaxistats.com/sources/tx-dmv/"
+  },
+  "states": [
+    {
+      "id": "TX",
+      "name": "Texas",
+      "color": "#FF6A00",
+      "current": 1302,
+      "cybercab_current": 573,
+      "as_of": "2026-11-11",
+      "status": "offiziell und live",
+      "source_name": "Texas DMV (TxMCCS). Historische Punkte bis 10.11.2026: robotaxistats (CC BY 4.0) und ein Wayback-API-Snapshot.",
+      "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "note": "Zulassungen in Texas, nicht die Zahl der Autos auf der Straße und nicht nach Stadt aufgeteilt. Die Linie zählt alle Tesla-Robotaxis (Model Y und Cybercab), weil die historische Reihe so belegt ist.",
+      "series": [
+        {
+          "date": "2026-06-09",
+          "value": 69,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-06-27",
+          "value": 84,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-07-02",
+          "value": 102,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-07-15",
+          "value": 175,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-07-30",
+          "value": 181,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-08-26",
+          "value": 191,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-08-30",
+          "value": 269,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-09-03",
+          "value": 420,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-09-04",
+          "value": 420,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "wayback",
+          "source_name": "Wayback Machine, TxDMV-API erste Seite, total=420",
+          "source_url": "https://web.archive.org/web/20260904004517/https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles?limit=20&offset=0"
+        },
+        {
+          "date": "2026-09-20",
+          "value": 448,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-09-25",
+          "value": 546,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-02",
+          "value": 589,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-09",
+          "value": 739,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-15",
+          "value": 769,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-17",
+          "value": 803,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-22",
+          "value": 858,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-23",
+          "value": 927,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-24",
+          "value": 970,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-27",
+          "value": 1080,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-30",
+          "value": 1204,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-10-31",
+          "value": 1204,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats-history",
+          "source_name": "robotaxistats history.json (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/data/txdmv/history.json"
+        },
+        {
+          "date": "2026-11-01",
+          "value": 1244,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-11-02",
+          "value": 1244,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats-history",
+          "source_name": "robotaxistats history.json (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/data/txdmv/history.json"
+        },
+        {
+          "date": "2026-11-03",
+          "value": 1244,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats-history",
+          "source_name": "robotaxistats history.json (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/data/txdmv/history.json"
+        },
+        {
+          "date": "2026-11-04",
+          "value": 1244,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats-history",
+          "source_name": "robotaxistats history.json (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/data/txdmv/history.json"
+        },
+        {
+          "date": "2026-11-07",
+          "value": 1244,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats-history",
+          "source_name": "robotaxistats history.json (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/data/txdmv/history.json"
+        },
+        {
+          "date": "2026-11-08",
+          "value": 1282,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-11-10",
+          "value": 1302,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "robotaxistats",
+          "source_name": "robotaxistats (CC BY 4.0), Texas DMV",
+          "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
+        },
+        {
+          "date": "2026-11-11",
+          "value": 1302,
+          "dash": false,
+          "status": "offiziell und live",
+          "origin": "cybergiga-snapshot",
+          "source_name": "Texas DMV (TxMCCS), eigener Snapshot",
+          "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+          "cybercab": 573
+        }
+      ]
+    },
+    {
+      "id": "FL",
+      "name": "Florida",
+      "color": "#3B82F6",
+      "current": null,
+      "as_of": "2026-11-08",
+      "status": "keine amtliche Zahl",
+      "source_name": "Tesla-Angaben zu Live-Städten, bei robotaxistats (CC BY 4.0). Florida veröffentlicht keine Fahrzeugliste.",
+      "source_url": "https://www.robotaxistats.com/states/florida/",
+      "note": "Live und unüberwacht in Miami (seit 3.7.2026), Orlando und Tampa (seit 21.7.2026). Ohne amtliche Stückzahl gibt es keine Linie im Chart.",
+      "series": []
+    },
+    {
+      "id": "CA",
+      "name": "Kalifornien",
+      "color": "#22D3A6",
+      "current": null,
+      "as_of": "2026-11-11",
+      "status": "keine amtliche Zahl",
+      "source_name": "California DMV, Permit-Inhaber (Testing with a Driver)",
+      "source_url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/",
+      "note": "TESLA ROBOTAXI LLC hat ein Test-Permit mit Sicherheitsfahrer, kein Driverless- oder Deployment-Permit. In der Bay Area läuft ein beaufsichtigter Dienst. Die öffentliche Liste nennt keine Fahrzeugzahl. CPUC-AV-Quartalsberichte enthalten Tesla nicht.",
+      "series": []
+    },
+    {
+      "id": "AZ",
+      "name": "Arizona",
+      "color": "#A78BFA",
+      "current": null,
+      "as_of": "2026-11-08",
+      "status": "keine amtliche Zahl",
+      "source_name": "Tesla: Phoenix coming soon. ADOT-TNC-Liste öffentlich, von uns am 11.11.2026 nicht lesbar (HTTP 403).",
+      "source_url": "https://www.robotaxistats.com/services/tesla/",
+      "note": "Kein Live-Betrieb. Ein TNC-Permit wird in Drittquellen genannt, eine Fahrzeugzahl ist nicht belegt. Deshalb keine Linie.",
+      "series": []
+    },
+    {
+      "id": "NV",
+      "name": "Nevada",
+      "color": "#FBBF24",
+      "current": null,
+      "as_of": "2026-11-08",
+      "status": "keine amtliche Zahl",
+      "source_name": "Nevada Transportation Authority, AVNC Permit 002",
+      "source_url": "https://www.nta.nv.gov/siteassets/carriers/certificates/cert---t-to-z/Tesla_Robotaxi_LLC_AVNC_002-cert_ADA.pdf",
+      "note": "Permit für vollautonome Fahrten im Las-Vegas-Strip-Korridor, Obergrenze zehn Fahrzeuge. Das ist keine aktuelle Flottenzahl und der Dienst ist laut Tesla-Stand noch nicht live. Deshalb keine Linie.",
+      "series": []
+    }
+  ]
+}

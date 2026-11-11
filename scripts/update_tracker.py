@@ -432,6 +432,20 @@ def main() -> int:
             MODEL_Y_PREFIX,
         )
 
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from build_states import build_and_write_from_live
+        states_written = build_and_write_from_live(
+            tesla_total=counts["tesla_registered_tx"],
+            cybercab_total=counts["registered_total"],
+            as_of=today,
+            last_updated=iso(now),
+            source_url=source_url,
+        )
+        log.info("states.json geschrieben=%s", states_written)
+    except Exception as states_exc:
+        log.warning("states.json nicht aktualisiert: %s", states_exc)
+
     log.info(
         "ok=true registered_total=%s tesla_registered_tx=%s model_y=%s delta_1d=%s delta_1w=%s",
         counts["registered_total"],
