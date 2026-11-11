@@ -1,16 +1,16 @@
 {
-  "note": "Von Hand pflegen, wenn sich der Betriebsstatus oder eine belegte Zahl außerhalb von Texas ändert. Das stündliche Skript überschreibt diese Datei nicht. Keine erfundenen Fahrzeugzahlen eintragen. Status nur offiziell und live, geschätzt/angenähert oder keine amtliche Zahl.",
+  "note": "Von Hand pflegen, wenn sich der Betriebsstatus oder eine belegte Zahl außerhalb von Texas ändert. Das stündliche Skript überschreibt diese Datei nicht. Keine erfundenen Fahrzeugzahlen eintragen. Status nur offiziell und live, geschätzt/angenähert oder keine amtliche Zahl. Stand der Prüfung: 11.11.2026.",
   "states": [
     {
       "id": "FL",
       "name": "Florida",
       "color": "#3B82F6",
       "current": null,
-      "as_of": "2026-11-08",
+      "as_of": "2026-11-11",
       "status": "keine amtliche Zahl",
-      "source_name": "Tesla-Angaben zu Live-Städten, bei robotaxistats (CC BY 4.0). Florida veröffentlicht keine Fahrzeugliste.",
-      "source_url": "https://www.robotaxistats.com/states/florida/",
-      "note": "Live und unüberwacht in Miami (seit 3.7.2026), Orlando und Tampa (seit 21.7.2026). Ohne amtliche Stückzahl gibt es keine Linie im Chart.",
+      "source_name": "Tesla-Robotaxi-Seite und robotaxistats (CC BY 4.0). Florida veröffentlicht keine Fahrzeugliste.",
+      "source_url": "https://www.tesla.com/robotaxi",
+      "note": "Live und unüberwacht in Miami (seit 3.7.2026), Orlando und Tampa (seit 21.7.2026). Jacksonville ist angekündigt, nicht live. Prüfung am 11.11.2026: Q3-2026-Bericht, Earnings Call, Tesla- und @robotaxi-Posts sowie robotaxistats nennen Städte und Meilen, aber keine Stückzahl für Florida. Blog- und Medien-Schätzungen (etwa 25 bis 40 je Stadt oder rund 40 im ganzen Staat) sind nicht von Tesla und stützen sich teils auf Tracker, deren Nutzung uns untersagt ist. Deshalb keine Linie.",
       "series": []
     },
     {
@@ -20,9 +20,9 @@
       "current": null,
       "as_of": "2026-11-11",
       "status": "keine amtliche Zahl",
-      "source_name": "California DMV, Permit-Inhaber (Testing with a Driver)",
+      "source_name": "California DMV, Permit-Inhaber (Testing with a Driver), Liste Stand 23.10.2026",
       "source_url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/",
-      "note": "TESLA ROBOTAXI LLC hat ein Test-Permit mit Sicherheitsfahrer, kein Driverless- oder Deployment-Permit. In der Bay Area läuft ein beaufsichtigter Dienst. Die öffentliche Liste nennt keine Fahrzeugzahl. CPUC-AV-Quartalsberichte enthalten Tesla nicht.",
+      "note": "TESLA ROBOTAXI LLC hat ein Test-Permit mit Sicherheitsfahrer, kein Driverless- oder Deployment-Permit. In der Bay Area läuft ein beaufsichtigter Dienst. Die öffentliche DMV-Liste nennt keine Fahrzeugzahl. CPUC-AV-Quartalsberichte enthalten Tesla nicht. Prüfung am 11.11.2026: Tesla nennt keine kalifornische Stückzahl. Deshalb keine Linie.",
       "series": []
     },
     {
@@ -30,11 +30,11 @@
       "name": "Arizona",
       "color": "#A78BFA",
       "current": null,
-      "as_of": "2026-11-08",
+      "as_of": "2026-11-11",
       "status": "keine amtliche Zahl",
-      "source_name": "Tesla: Phoenix coming soon. ADOT-TNC-Liste öffentlich, von uns am 11.11.2026 nicht lesbar (HTTP 403).",
-      "source_url": "https://www.robotaxistats.com/services/tesla/",
-      "note": "Kein Live-Betrieb. Ein TNC-Permit wird in Drittquellen genannt, eine Fahrzeugzahl ist nicht belegt. Deshalb keine Linie.",
+      "source_name": "Tesla-Robotaxi-Seite und @robotaxi: Phoenix coming soon. ADOT-TNC-Liste öffentlich, von uns am 11.11.2026 nicht lesbar (HTTP 403).",
+      "source_url": "https://www.tesla.com/robotaxi",
+      "note": "Kein Live-Betrieb. Prüfung am 11.11.2026: tesla.com/robotaxi und @robotaxi (21.10.2026) führen Phoenix als coming soon. robotaxistats: kein Betreiber nennt eine Flottenzahl für Arizona. Deshalb keine Linie.",
       "series": []
     },
     {
@@ -42,11 +42,11 @@
       "name": "Nevada",
       "color": "#FBBF24",
       "current": null,
-      "as_of": "2026-11-08",
+      "as_of": "2026-11-11",
       "status": "keine amtliche Zahl",
-      "source_name": "Nevada Transportation Authority, AVNC Permit 002",
-      "source_url": "https://www.nta.nv.gov/siteassets/carriers/certificates/cert---t-to-z/Tesla_Robotaxi_LLC_AVNC_002-cert_ADA.pdf",
-      "note": "Permit für vollautonome Fahrten im Las-Vegas-Strip-Korridor, Obergrenze zehn Fahrzeuge. Das ist keine aktuelle Flottenzahl und der Dienst ist laut Tesla-Stand noch nicht live. Deshalb keine Linie.",
+      "source_name": "Tesla-Robotaxi-Seite und @robotaxi: Las Vegas coming soon. Nevada Transportation Authority, AVNC Permit 002.",
+      "source_url": "https://www.tesla.com/robotaxi",
+      "note": "Kein Live-Betrieb. Prüfung am 11.11.2026: tesla.com/robotaxi und @robotaxi (21.10.2026) führen Las Vegas als coming soon. Ein Permit oder eine Obergrenze ist keine aktuelle Flottenzahl. robotaxistats: keine Flottenzahl für Nevada. Deshalb keine Linie.",
       "series": []
     }
   ]
