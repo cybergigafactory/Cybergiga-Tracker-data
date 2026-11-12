@@ -1,9 +1,9 @@
 {
   "ok": true,
   "registered_total": 573,
-  "delta_1d": null,
+  "delta_1d": 0,
   "delta_1w": null,
-  "last_updated": "2026-11-12T01:56:01Z",
+  "last_updated": "2026-11-12T18:22:49Z",
   "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
   "source_name": "Texas DMV (TxMCCS)",
   "tesla_registered_tx": 1303,
