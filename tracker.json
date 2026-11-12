@@ -3,11 +3,11 @@
   "registered_total": 573,
   "delta_1d": null,
   "delta_1w": null,
-  "last_updated": "2026-11-11T11:46:49Z",
+  "last_updated": "2026-11-12T01:56:01Z",
   "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
   "source_name": "Texas DMV (TxMCCS)",
-  "tesla_registered_tx": 1302,
-  "model_y_registered_tx": 729,
+  "tesla_registered_tx": 1303,
+  "model_y_registered_tx": 730,
   "unclassified_vin_count": 0,
   "vin_prefix_cybercab": "5YJAJEEU",
   "note": "Zulassungen von Cybercabs in Texas. Das ist nicht die Zahl der Autos auf der Straße und nicht nach Stadt aufgeteilt.",
@@ -15,6 +15,10 @@
   "history": [
     {
       "date": "2026-11-11",
+      "registered_total": 573
+    },
+    {
+      "date": "2026-11-12",
       "registered_total": 573
     }
   ]

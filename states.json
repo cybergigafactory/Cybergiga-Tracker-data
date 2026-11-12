@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "last_updated": "2026-11-11T11:46:49Z",
+  "last_updated": "2026-11-12T01:56:01Z",
   "title": "Tesla-Robotaxis nach Bundesstaat",
   "metric": "Zugelassene Tesla-Robotaxis, soweit amtlich belegt. Das ist nicht die Zahl der Autos auf der Straße.",
   "y_axis": "Die Y-Achse richtet sich nach dem Staat mit der höchsten belegten Zahl (aktuell Texas).",
@@ -15,9 +15,9 @@
       "id": "TX",
       "name": "Texas",
       "color": "#FF6A00",
-      "current": 1302,
+      "current": 1303,
       "cybercab_current": 573,
-      "as_of": "2026-11-11",
+      "as_of": "2026-11-12",
       "status": "offiziell und live",
       "source_name": "Texas DMV (TxMCCS). Historische Punkte bis 10.11.2026: robotaxistats (CC BY 4.0) und ein Wayback-API-Snapshot.",
       "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
@@ -276,8 +276,8 @@
           "source_url": "https://www.robotaxistats.com/sources/tx-dmv/"
         },
         {
-          "date": "2026-11-11",
-          "value": 1302,
+          "date": "2026-11-12",
+          "value": 1303,
           "dash": false,
           "status": "offiziell und live",
           "origin": "cybergiga-snapshot",

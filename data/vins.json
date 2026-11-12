@@ -1,13 +1,13 @@
 {
   "ok": true,
-  "last_updated": "2026-11-11T11:46:49Z",
+  "last_updated": "2026-11-12T01:56:01Z",
   "first_snapshot_at": "2026-11-11T11:46:49Z",
   "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
   "company_id": "81edcff1-8a6e-4ed0-be1f-60668515e223",
   "company_name": "Tesla Robotaxi, LLC",
   "registered_total": 573,
-  "tesla_registered_tx": 1302,
-  "model_y_registered_tx": 729,
+  "tesla_registered_tx": 1303,
+  "model_y_registered_tx": 730,
   "unclassified_vin_count": 0,
   "vin_prefix_cybercab": "5YJAJEEU",
   "vins": [
@@ -4498,6 +4498,10 @@
     {
       "vin": "7SAYGDEE8TF541283",
       "first_seen_at": "2026-11-11T11:46:49Z"
+    },
+    {
+      "vin": "7SAYGDEE8TF541302",
+      "first_seen_at": "2026-11-12T01:56:01Z"
     },
     {
       "vin": "7SAYGDEE8TF541316",
