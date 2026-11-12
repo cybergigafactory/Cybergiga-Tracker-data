@@ -37,3 +37,9 @@ Dieses Projekt ist nicht von Tesla und nicht vom TxDMV herausgegeben.
 Andere Staaten stehen in `data/states-manuell.json` und werden nur von Hand geändert. Ohne belegte Fahrzeugzahl bleibt `current` leer und es gibt keine Linie im Chart. Bitte keine Schätzungen ohne Quelle eintragen.
 
 Die Seite darf `states.json` und `tracker.json` per raw.githubusercontent.com (Ausweichadresse jsDelivr) lesen. Bei Nutzung der historischen Texas-Werte muss robotaxistats mit Link und der Lizenz CC BY 4.0 genannt werden.
+
+## TAD/FSD-Datei für die Seite /tad
+
+`tad-fsd.json` beschreibt den belegten Stand von TAD/FSD Supervised je Land. Statuswerte sind `approved`, `announced` oder `none`. Es stehen nur Tesla-Primärquellen und amtliche Stellen darin. X, Blogs und Tracker-Seiten sind keine Belege. Ein fehlendes oder leeres File darf auf der Seite nicht als Freigabe gelesen werden.
+
+Die Datei wird von Hand gepflegt, nicht vom stündlichen Texas-Workflow. Die Seite darf sie per raw.githubusercontent.com lesen, Ausweichadresse jsDelivr, analog zu `tracker.json` und `states.json`.
