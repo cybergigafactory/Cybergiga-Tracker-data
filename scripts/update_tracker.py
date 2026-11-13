@@ -222,7 +222,17 @@ def classify(vins: list[str]) -> dict[str, int]:
     }
 
 
-def history_with_today(prev_tracker: dict[str, Any] | None, today: str, total: int) -> list[dict[str, Any]]:
+def history_with_today(
+    prev_tracker: dict[str, Any] | None,
+    today: str,
+    counts: dict[str, int],
+) -> list[dict[str, Any]]:
+    """Tageswerte (UTC-Kalendertag), je Tag der letzte Stand des Tages.
+
+    Seit 13.11.2026 stehen neben registered_total (Cybercab) auch tesla_total
+    (alle Tesla-Robotaxis, gleiche Größe wie die Texas-Linie im Chart) und
+    model_y in jeder Zeile.
+    """
     rows: list[dict[str, Any]] = []
     if prev_tracker and isinstance(prev_tracker.get("history"), list):
         for item in prev_tracker["history"]:
@@ -230,44 +240,53 @@ def history_with_today(prev_tracker: dict[str, Any] | None, today: str, total: i
                 continue
             date = item.get("date")
             value = item.get("registered_total")
-            if not isinstance(date, str):
-                continue
-            if not isinstance(value, int):
+            if not isinstance(date, str) or not isinstance(value, int):
                 continue
             if date == today:
                 continue
-            rows.append({"date": date, "registered_total": value})
-    rows.append({"date": today, "registered_total": total})
+            row: dict[str, Any] = {"date": date, "registered_total": value}
+            for key in ("tesla_total", "model_y"):
+                if isinstance(item.get(key), int):
+                    row[key] = item[key]
+            rows.append(row)
+    rows.append(
+        {
+            "date": today,
+            "registered_total": counts["registered_total"],
+            "tesla_total": counts["tesla_registered_tx"],
+            "model_y": counts["model_y_registered_tx"],
+        }
+    )
     rows.sort(key=lambda r: r["date"])
     return rows[-400:]
 
 
-def lookup_history(history: list[dict[str, Any]], date: str) -> int | None:
-    for item in history:
-        if item.get("date") == date:
-            value = item.get("registered_total")
-            if isinstance(value, int):
-                return value
-    return None
+def value_on_or_before(points: list[tuple[str, int]], date: str) -> int | None:
+    """Stand am Ende des Tages `date`: letzter bekannter Wert mit Datum <= date.
+
+    Zulassungslisten sind ein Bestand. Fehlt ein Tag (kein Abruf, keine Änderung),
+    gilt der letzte Wert davor. Liegt date vor dem ersten Punkt, gibt es keinen
+    Vergleich (None).
+    """
+    best: int | None = None
+    for d, v in sorted(points):
+        if d <= date:
+            best = v
+        else:
+            break
+    return best
 
 
-def compute_deltas(
-    history: list[dict[str, Any]],
-    current: int,
-    now: datetime,
-    first_snapshot_at: datetime,
+def deltas_from_points(
+    points: list[tuple[str, int]], current: int, today: str
 ) -> tuple[int | None, int | None]:
-    delta_1d: int | None = None
-    delta_1w: int | None = None
-    if now >= first_snapshot_at + timedelta(days=1):
-        prior = lookup_history(history, (now.date() - timedelta(days=1)).isoformat())
-        if prior is not None:
-            delta_1d = current - prior
-    if now >= first_snapshot_at + timedelta(days=7):
-        prior = lookup_history(history, (now.date() - timedelta(days=7)).isoformat())
-        if prior is not None:
-            delta_1w = current - prior
-    return delta_1d, delta_1w
+    day = datetime.fromisoformat(today).date()
+    prior_1d = value_on_or_before(points, (day - timedelta(days=1)).isoformat())
+    prior_1w = value_on_or_before(points, (day - timedelta(days=7)).isoformat())
+    return (
+        None if prior_1d is None else current - prior_1d,
+        None if prior_1w is None else current - prior_1w,
+    )
 
 
 def atomic_write(path: Path, data: dict[str, Any]) -> None:
@@ -306,6 +325,10 @@ def should_write_tracker(
         "unclassified_vin_count",
         "delta_1d",
         "delta_1w",
+        "delta_total_1d",
+        "delta_total_1w",
+        "delta_model_y_1d",
+        "delta_model_y_1w",
         "history",
         "source_url",
         "ok",
@@ -369,9 +392,23 @@ def main() -> int:
         seen = prev_seen.get(vin) or iso(now)
         vin_rows.append({"vin": vin, "first_seen_at": seen})
 
-    history = history_with_today(prev_tracker, today, counts["registered_total"])
-    delta_1d, delta_1w = compute_deltas(
-        history, counts["registered_total"], now, first_snapshot_at
+    history = history_with_today(prev_tracker, today, counts)
+    # Cybercab: nur eigene Tageswerte (Archiv ab 11.11.2026).
+    cyber_points = [(r["date"], r["registered_total"]) for r in history]
+    delta_1d, delta_1w = deltas_from_points(cyber_points, counts["registered_total"], today)
+    # Alle Tesla-Robotaxis: dieselbe Reihe wie die Texas-Linie im Chart (states.json).
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from build_states import texas_series
+    total_points = [
+        (p["date"], int(p["value"]))
+        for p in texas_series(history, counts["tesla_registered_tx"], today, API_BASE)
+    ]
+    delta_total_1d, delta_total_1w = deltas_from_points(
+        total_points, counts["tesla_registered_tx"], today
+    )
+    my_points = [(r["date"], r["model_y"]) for r in history if isinstance(r.get("model_y"), int)]
+    delta_my_1d, delta_my_1w = deltas_from_points(
+        my_points, counts["model_y_registered_tx"], today
     )
 
     tracker = {
@@ -379,6 +416,15 @@ def main() -> int:
         "registered_total": counts["registered_total"],
         "delta_1d": delta_1d,
         "delta_1w": delta_1w,
+        "delta_total_1d": delta_total_1d,
+        "delta_total_1w": delta_total_1w,
+        "delta_model_y_1d": delta_my_1d,
+        "delta_model_y_1w": delta_my_1w,
+        "delta_basis": (
+            "Vergleich mit dem Stand am Ende des UTC-Vortags bzw. vor 7 UTC-Tagen "
+            "(letzter bekannter Wert an oder vor dem Stichtag). delta_total_* nutzt "
+            "dieselbe Texas-Reihe wie die Linie in states.json."
+        ),
         "last_updated": iso(now),
         "source_url": source_url,
         "source_name": "Texas DMV (TxMCCS)",
@@ -436,6 +482,7 @@ def main() -> int:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         from build_states import build_and_write_from_live
         states_written = build_and_write_from_live(
+            history=history,
             tesla_total=counts["tesla_registered_tx"],
             cybercab_total=counts["registered_total"],
             as_of=today,

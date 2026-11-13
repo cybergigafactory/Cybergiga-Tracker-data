@@ -43,3 +43,12 @@ Die Seite darf `states.json` und `tracker.json` per raw.githubusercontent.com (A
 `tad-fsd.json` beschreibt den belegten Stand von TAD/FSD Supervised je Land. Statuswerte sind `approved`, `announced` oder `none`. Es stehen nur Tesla-Primärquellen und amtliche Stellen darin. X, Blogs und Tracker-Seiten sind keine Belege. Ein fehlendes oder leeres File darf auf der Seite nicht als Freigabe gelesen werden.
 
 Die Datei wird von Hand gepflegt, nicht vom stündlichen Texas-Workflow. Die Seite darf sie per raw.githubusercontent.com lesen, Ausweichadresse jsDelivr, analog zu `tracker.json` und `states.json`.
+
+## Tagesänderungen (+1D, +1W), Stand 13.11.2026
+
+- Stichtag ist der UTC-Kalendertag. Verglichen wird mit dem Stand am Ende des Vortags bzw. vor sieben Tagen, und zwar mit dem letzten bekannten Wert an oder vor diesem Tag (Bestandszahl, fehlende Tage gelten als unverändert). Ohne Wert vor dem Stichtag bleibt das Feld `null`.
+- `delta_1d` / `delta_1w`: Cybercabs (VIN-Präfix `5YJAJEEU`), nur aus dem eigenen Archiv ab 11.11.2026. `delta_1w` ist deshalb erst ab 18.11.2026 belegt.
+- `delta_total_1d` / `delta_total_1w`: alle Tesla-Robotaxis (Model Y und Cybercab). Gerechnet aus derselben Texas-Reihe wie die Linie in `states.json` (Bootstrap plus eigene Tageswerte). Diese Werte passen zum Chart.
+- `delta_model_y_1d` / `delta_model_y_1w`: Model Y (Präfix `7SAYGDEE`), eigenes Archiv ab 11.11.2026.
+- `history` enthält je Tag `registered_total` (Cybercab), `tesla_total` und `model_y`. Die Tage 11.11. und 12.11.2026 wurden aus den eigenen Commits fdcf1fa und 25e1958 nachgetragen.
+- Bis 13.11.2026 hing `states.json` nur den heutigen Live-Punkt an, eigene Vortage fielen wieder aus der Linie. Jetzt bleiben alle eigenen Tageswerte stehen.

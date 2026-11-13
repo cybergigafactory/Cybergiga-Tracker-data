@@ -57,7 +57,7 @@ def point_from_bootstrap(item: dict[str, Any]) -> dict[str, Any]:
 
 def merge_series(
     bootstrap_points: list[dict[str, Any]],
-    live_point: dict[str, Any] | None,
+    live_points: list[dict[str, Any]] | dict[str, Any] | None,
 ) -> list[dict[str, Any]]:
     by_date: dict[str, dict[str, Any]] = {}
     for item in bootstrap_points:
@@ -65,14 +65,17 @@ def merge_series(
         if not date:
             continue
         by_date[date] = point_from_bootstrap(item)
-    if live_point and live_point.get("date"):
-        date = str(live_point["date"])
+    if isinstance(live_points, dict):
+        live_points = [live_points]
+    for lp in live_points or []:
+        if not lp or not lp.get("date"):
+            continue
+        date = str(lp["date"])
         existing = by_date.get(date)
         if existing and existing.get("origin") in BOOTSTRAP_ORIGINS:
             # Feste historische Punkte nicht überschreiben, auch am selben Tag.
-            pass
-        else:
-            by_date[date] = live_point
+            continue
+        by_date[date] = lp
     return [by_date[k] for k in sorted(by_date)]
 
 
@@ -104,26 +107,50 @@ def without_volatile(doc: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+def live_point(date: str, value: int, cybercab: int | None, source_url: str) -> dict[str, Any]:
+    return {
+        "date": date,
+        "value": int(value),
+        "dash": False,
+        "status": "offiziell und live",
+        "origin": "cybergiga-snapshot",
+        "source_name": "Texas DMV (TxMCCS), eigener Snapshot",
+        "source_url": source_url or TXDMV_URL,
+        "cybercab": cybercab,
+    }
+
+
+def texas_series(
+    history: list[dict[str, Any]] | None,
+    tesla_total: int,
+    as_of: str,
+    source_url: str,
+    cybercab_total: int | None = None,
+) -> list[dict[str, Any]]:
+    """Bootstrap plus alle eigenen Tageswerte (nicht nur der heutige).
+
+    Bis 13.11.2026 wurde nur der heutige Live-Punkt angehängt, ältere eigene
+    Tage fielen beim nächsten Tag wieder aus der Linie.
+    """
+    bootstrap = load_json(BOOTSTRAP_PATH)
+    lives: list[dict[str, Any]] = []
+    for row in history or []:
+        if isinstance(row, dict) and isinstance(row.get("tesla_total"), int) and row.get("date") != as_of:
+            lives.append(live_point(str(row["date"]), row["tesla_total"], row.get("registered_total"), source_url))
+    lives.append(live_point(as_of, tesla_total, cybercab_total, source_url))
+    return merge_series(list(bootstrap.get("points") or []), lives)
+
+
 def build_states(
     tesla_total: int,
     cybercab_total: int | None,
     as_of: str,
     last_updated: str,
     source_url: str,
+    history: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
-    bootstrap = load_json(BOOTSTRAP_PATH)
     manual = load_json(MANUAL_PATH)
-    live_point = {
-        "date": as_of,
-        "value": int(tesla_total),
-        "dash": False,
-        "status": "offiziell und live",
-        "origin": "cybergiga-snapshot",
-        "source_name": "Texas DMV (TxMCCS), eigener Snapshot",
-        "source_url": source_url or TXDMV_URL,
-        "cybercab": cybercab_total,
-    }
-    series = merge_series(list(bootstrap.get("points") or []), live_point)
+    series = texas_series(history, tesla_total, as_of, source_url, cybercab_total)
     latest = series[-1]["value"] if series else tesla_total
     states = [texas_block(series, latest, cybercab_total, as_of, source_url)]
     for item in manual.get("states") or []:
@@ -177,6 +204,7 @@ def from_tracker() -> dict[str, Any]:
         as_of=as_of,
         last_updated=updated,
         source_url=source_url,
+        history=tracker.get("history") if isinstance(tracker.get("history"), list) else None,
     )
 
 
@@ -186,8 +214,9 @@ def build_and_write_from_live(
     as_of: str,
     last_updated: str,
     source_url: str,
+    history: list[dict[str, Any]] | None = None,
 ) -> bool:
-    doc = build_states(tesla_total, cybercab_total, as_of, last_updated, source_url)
+    doc = build_states(tesla_total, cybercab_total, as_of, last_updated, source_url, history)
     return write_if_changed(doc)
 
 
