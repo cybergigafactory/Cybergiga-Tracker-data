@@ -42,6 +42,8 @@ Die Seite darf `states.json` und `tracker.json` per raw.githubusercontent.com (A
 
 `tad-fsd.json` beschreibt den belegten Stand von TAD/FSD Supervised je Land. Statuswerte sind `approved`, `announced` oder `none`. Es stehen nur Tesla-Primärquellen und amtliche Stellen darin. X, Blogs und Tracker-Seiten sind keine Belege. Ein fehlendes oder leeres File darf auf der Seite nicht als Freigabe gelesen werden.
 
+Ausnahme seit 13.11.2026: Startdaten für USA, Kanada, Mexiko, Puerto Rico, China, Australien, Neuseeland und Südkorea sowie der Status von China stammen von Rappy (selbst geprüft, Feld `date_source`: "Rappy, geprüft 13.11.2026"), nicht aus einer Tesla- oder Behördenseite. Felder: `date` (YYYY-MM-DD oder YYYY-MM), `date_precision` (`day` oder `month`), optional `note_de`/`note_en` (kurzer Zusatz wie "eingeschränkt").
+
 Die Datei wird von Hand gepflegt, nicht vom stündlichen Texas-Workflow. Die Seite darf sie per raw.githubusercontent.com lesen, Ausweichadresse jsDelivr, analog zu `tracker.json` und `states.json`.
 
 ## Tagesänderungen (+1D, +1W), Stand 13.11.2026

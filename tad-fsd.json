@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "last_updated": "2026-11-12T08:46:19Z",
+  "last_updated": "2026-11-13T12:40:00Z",
   "title": "TAD/FSD",
   "countries": [
     {
@@ -93,11 +93,13 @@
       "name_en": "Australia",
       "region": "oceania",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Australien auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists Australia on the FSD Safety page as a market with a successful rollout. No official start date is recorded in this file. The driver remains responsible.",
+      "date": "2025-09-18",
+      "legal_de": "Tesla führt Australien auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists Australia on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "AT",
@@ -159,7 +161,8 @@
       "source_url": "https://www.vlaamsparlement.be/nl/parlementair-werk/commissies/commissievergaderingen/2042427/verslag/2046015",
       "source_name": "Vlaams Parlement, Kommission 11.06.2026",
       "notes_de": "Tesla führt Belgien zusätzlich auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf.",
-      "notes_en": "Tesla also lists Belgium on the FSD Safety page as a market with a successful rollout."
+      "notes_en": "Tesla also lists Belgium on the FSD Safety page as a market with a successful rollout.",
+      "date_precision": "day"
     },
     {
       "iso2": "BZ",
@@ -323,11 +326,13 @@
       "name_en": "Canada",
       "region": "americas",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Kanada auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists Canada on the FSD Safety page as a market with a successful rollout. No official start date is recorded in this file. The driver remains responsible.",
+      "date": "2022-03-26",
+      "legal_de": "Tesla führt Kanada auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists Canada on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "CF",
@@ -370,14 +375,18 @@
       "name_de": "China",
       "name_en": "China",
       "region": "asia",
-      "status": "none",
-      "date": null,
-      "legal_de": "Tesla schreibt im Quartalsbericht Q1 2026, man mache Fortschritte bei der Genehmigung in China. China steht nicht auf der Tesla-Liste der Märkte mit erfolgreicher Einführung. Eine Freigabe ist damit nicht belegt.",
-      "legal_en": "In its Q1 2026 update Tesla said it continues to make progress on approval in China. China is not on Tesla's list of markets with a successful rollout. Approval is therefore not documented.",
+      "status": "approved",
+      "date": "2025-02-25",
+      "legal_de": "Laut Rappy (geprüft 13.11.2026) seit 25.02.2025 eingeschränkt freigegeben. Der Fahrer bleibt verantwortlich.",
+      "legal_en": "According to Rappy (checked 13 Nov 2026) approved with restrictions since 25 Feb 2025. The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
       "source_name": "Tesla, FSD Safety und Q1-2026-Update",
-      "notes_de": "Zusätzliche Quelle: Tesla Q1 2026 Update, Folie zur Aufsicht über FSD in weiteren Märkten, China nur als laufendes Verfahren.",
-      "notes_en": "Additional source: Tesla Q1 2026 Update, which treats China as a work in progress rather than an approved market."
+      "notes_de": "Frühere Einschätzung vom 12.11.2026: Tesla schreibt im Quartalsbericht Q1 2026, man mache Fortschritte bei der Genehmigung in China. China steht nicht auf der Tesla-Liste der Märkte mit erfolgreicher Einführung. Eine Freigabe ist damit nicht belegt.",
+      "notes_en": "Earlier assessment of 12 Nov 2026: In its Q1 2026 update Tesla said it continues to make progress on approval in China. China is not on Tesla's list of markets with a successful rollout. Approval is therefore not documented.",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026",
+      "note_de": "eingeschränkt",
+      "note_en": "restricted"
     },
     {
       "iso2": "CO",
@@ -415,7 +424,8 @@
       "source_url": "https://www.hina.hr/vijest/12518724",
       "source_name": "HINA, Schreiben des DZM, 29.09.2026",
       "notes_de": "Eine eigene Seite auf dzm.gov.hr wurde bei der Prüfung nicht gefunden. Tesla führt Kroatien auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf.",
-      "notes_en": "A page on dzm.gov.hr was not found during the review. Tesla lists Croatia on the FSD Safety page as a market with a successful rollout."
+      "notes_en": "A page on dzm.gov.hr was not found during the review. Tesla lists Croatia on the FSD Safety page as a market with a successful rollout.",
+      "date_precision": "day"
     },
     {
       "iso2": "CU",
@@ -477,7 +487,8 @@
       "legal_de": "Die dänische Færdselsstyrelsen hat die niederländische vorläufige Genehmigung akzeptiert. FSD Supervised darf in Dänemark genutzt werden, bleibt aber vorläufig, solange die EU-Kommission nicht entscheidet. Der Fahrer bleibt voll verantwortlich.",
       "legal_en": "The Danish Road Traffic Authority accepted the Dutch provisional approval. FSD Supervised may be used in Denmark, but the approval remains provisional until the European Commission decides. The driver remains fully responsible.",
       "source_url": "https://www.fstyr.dk/nyheder/2026/jun/teslas-foererassistentsystem-fsd-supervised-er-foreloebigt-godkendt-i-danmark",
-      "source_name": "Færdselsstyrelsen, 09.06.2026"
+      "source_name": "Færdselsstyrelsen, 09.06.2026",
+      "date_precision": "day"
     },
     {
       "iso2": "DJ",
@@ -585,7 +596,8 @@
       "legal_de": "Die estnische Transpordiamet hat am 29. Mai 2026 die niederländische Typgenehmigung für das Tesla-Fahrerassistenzsystem anerkannt. Es handelt sich um ein Assistenzsystem der SAE-Stufe 2. Der Fahrer bleibt jederzeit verantwortlich und muss bei Bedarf sofort übernehmen.",
       "legal_en": "Estonia's Transport Administration recognised the Dutch type approval for Tesla's driver assistance system on 29 May 2026. It is an SAE Level 2 assistance system. The driver remains responsible at all times and must take over immediately if needed.",
       "source_url": "https://transpordiamet.ee/uudised/transpordiamet-kiitis-heaks-tesla-juhiabisusteemi-hollandi-tuubikinnituse",
-      "source_name": "Transpordiamet, 29.05.2026"
+      "source_name": "Transpordiamet, 29.05.2026",
+      "date_precision": "day"
     },
     {
       "iso2": "SZ",
@@ -647,7 +659,8 @@
       "source_url": "https://www.traficom.fi/en/news/teslas-driver-assistance-system-now-permitted-finnish-roads",
       "source_name": "Traficom, Anerkennung 10.11.2026",
       "notes_de": "Der Traficom-Artikel wurde am 11.11.2026 veröffentlicht. Im Text steht die Anerkennung auf den 10. November 2026. Dieses Datum wird hier verwendet, nicht der 11.11.",
-      "notes_en": "The Traficom article was published on 11 November 2026. The body states that recognition took place on 10 November 2026. That decision date is used here, not 11 November."
+      "notes_en": "The Traficom article was published on 11 November 2026. The body states that recognition took place on 10 November 2026. That decision date is used here, not 11 November.",
+      "date_precision": "day"
     },
     {
       "iso2": "FR",
@@ -1057,7 +1070,8 @@
       "legal_de": "Die lettische CSDD hat am 26. Oktober 2026 die von der RDW erteilte vorläufige EU-Typgenehmigung anerkannt. In Europa heißt das System inzwischen Tesla Assisted Driving. Der Fahrer bleibt vollständig verantwortlich, muss den Verkehr selbst überwachen und jederzeit übernehmen können.",
       "legal_en": "Latvia's CSDD recognised the RDW provisional EU type approval on 26 October 2026. In Europe the system is now called Tesla Assisted Driving. The driver remains fully responsible, must monitor traffic and be ready to take over at any time.",
       "source_url": "https://www.sam.gov.lv/lv/jaunums/latvija-atzist-niderlande-izsniegto-provizorisko-tipa-apstiprinajumu-tesla-izstradatajai-vaditaja-paligsistemai",
-      "source_name": "Satiksmes ministrija / CSDD, 26.10.2026"
+      "source_name": "Satiksmes ministrija / CSDD, 26.10.2026",
+      "date_precision": "day"
     },
     {
       "iso2": "LB",
@@ -1117,7 +1131,8 @@
       "legal_de": "Das litauische Verkehrsministerium und die LTSA haben am 20. Mai 2026 die von der RDW erteilte vorläufige EU-Typgenehmigung für FSD Supervised anerkannt. Die Verantwortung bleibt beim Fahrer. Grundlage ist die Verordnung (EU) 2018/858.",
       "legal_en": "The Lithuanian Ministry of Transport and LTSA recognised the Dutch RDW provisional EU type approval for FSD Supervised on 20 May 2026. Responsibility remains with the driver, under Regulation (EU) 2018/858.",
       "source_url": "https://sumin.lrv.lt/lt/naujienos/juras-taminskas-lietuva-tarp-pirmuju-europoje-kur-automobiliai-nuo-siol-gali-vairuoti-patys-cRIY/",
-      "source_name": "Litauisches Verkehrsministerium, 20.05.2026"
+      "source_name": "Litauisches Verkehrsministerium, 20.05.2026",
+      "date_precision": "day"
     },
     {
       "iso2": "LU",
@@ -1197,11 +1212,13 @@
       "name_en": "Mexico",
       "region": "americas",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Mexiko auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists Mexico on the FSD Safety page as a market with a successful rollout. No official start date is recorded in this file. The driver remains responsible.",
+      "date": "2025-02-11",
+      "legal_de": "Tesla führt Mexiko auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists Mexico on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "MD",
@@ -1311,7 +1328,8 @@
       "source_url": "https://www.rdw.nl/en/news/2026/rdw-explanation-of-european-type-approval-tesla-with-provisional-validity-in-the-netherlands",
       "source_name": "RDW, 10.04.2026",
       "notes_de": "Erste EU-Typgenehmigung nach Artikel 39 der Verordnung (EU) 2018/858. Tesla und mehrere Behörden nennen das System inzwischen Tesla Assisted Driving (TAD).",
-      "notes_en": "First EU type approval under Article 39 of Regulation (EU) 2018/858. Tesla and several authorities now also use the name Tesla Assisted Driving (TAD)."
+      "notes_en": "First EU type approval under Article 39 of Regulation (EU) 2018/858. Tesla and several authorities now also use the name Tesla Assisted Driving (TAD).",
+      "date_precision": "day"
     },
     {
       "iso2": "NC",
@@ -1331,11 +1349,13 @@
       "name_en": "New Zealand",
       "region": "oceania",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Neuseeland auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists New Zealand on the FSD Safety page as a market with a successful rollout. No official start date is recorded in this file. The driver remains responsible.",
+      "date": "2025-09-18",
+      "legal_de": "Tesla führt Neuseeland auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists New Zealand on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "NI",
@@ -1535,11 +1555,13 @@
       "name_en": "Puerto Rico",
       "region": "americas",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Puerto Rico auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists Puerto Rico on the FSD Safety page as a market with a successful rollout. No official start date is recorded in this file. The driver remains responsible.",
+      "date": "2025-02",
+      "legal_de": "Tesla führt Puerto Rico auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists Puerto Rico on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "month",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "QA",
@@ -1659,7 +1681,8 @@
       "legal_de": "Das slowakische Verkehrsministerium hat am 16. Oktober 2026 die vorläufige Typgenehmigung für Tesla FSD Supervised offiziell anerkannt. Der Fahrer bleibt voll verantwortlich. Das System überwacht die Aufmerksamkeit und schaltet sich bei Bedarf ab.",
       "legal_en": "The Slovak Ministry of Transport officially recognised the provisional type approval for Tesla FSD Supervised on 16 October 2026. The driver remains fully responsible. The system monitors attention and switches off if needed.",
       "source_url": "https://www.mindop.sk/media/tlacove-spravy/detail/slovensko-umoznilo-ciastocne-autonomne-riadenie-aut",
-      "source_name": "Ministerstvo dopravy SR, 16.10.2026"
+      "source_name": "Ministerstvo dopravy SR, 16.10.2026",
+      "date_precision": "day"
     },
     {
       "iso2": "SI",
@@ -1671,7 +1694,8 @@
       "legal_de": "Die slowenische Behörde AVP hat die vorläufige EU-Homologation der RDW nach Artikel 39 anerkannt. Laut Mitteilung der slowenischen Regierung vom 8. September 2026 darf das System in Slowenien genutzt werden. Der Fahrer bleibt verantwortlich.",
       "legal_en": "Slovenia's AVP recognised the RDW provisional EU homologation under Article 39. According to the Slovenian government notice of 8 September 2026, the system may be used in Slovenia. The driver remains responsible.",
       "source_url": "https://www.gov.si/novice/2026-09-08-slovenija-odpira-vrata-naprednim-tehnologijam-avtomatizirane-voznje/",
-      "source_name": "GOV.SI, 08.09.2026"
+      "source_name": "GOV.SI, 08.09.2026",
+      "date_precision": "day"
     },
     {
       "iso2": "SB",
@@ -1727,11 +1751,15 @@
       "name_en": "South Korea",
       "region": "asia",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Südkorea auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists South Korea on the FSD Safety page as a market with a successful rollout. No official start date is recorded in this file. The driver remains responsible.",
+      "date": "2025-11-21",
+      "legal_de": "Tesla führt Südkorea auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists South Korea on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026",
+      "note_de": "Model S/X",
+      "note_en": "Model S/X"
     },
     {
       "iso2": "SS",
@@ -2027,11 +2055,13 @@
       "name_en": "United States",
       "region": "americas",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt die Vereinigten Staaten auf der Seite FSD Safety als Markt mit erfolgreicher Einführung von FSD Supervised auf. Ein amtliches Startdatum ist in dieser Datei nicht hinterlegt. Der Fahrer bleibt verantwortlich. Das ist TAD/FSD Supervised, kein Robotaxi-Netz.",
-      "legal_en": "Tesla lists the United States on the FSD Safety page as a market with a successful FSD Supervised rollout. No official start date is recorded in this file. The driver remains responsible. This is TAD/FSD Supervised, not a robotaxi network.",
+      "date": "2020-10-20",
+      "legal_de": "Tesla führt die Vereinigten Staaten auf der Seite FSD Safety als Markt mit erfolgreicher Einführung von FSD Supervised auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich. Das ist TAD/FSD Supervised, kein Robotaxi-Netz.",
+      "legal_en": "Tesla lists the United States on the FSD Safety page as a market with a successful FSD Supervised rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible. This is TAD/FSD Supervised, not a robotaxi network.",
       "source_url": "https://www.tesla.com/fsd/safety",
-      "source_name": "Tesla, FSD Safety"
+      "source_name": "Tesla, FSD Safety",
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "UY",
