@@ -457,13 +457,13 @@
       "name_en": "Czechia",
       "region": "europe",
       "status": "approved",
-      "date": null,
-      "legal_de": "Tesla führt Tschechien auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Ein von uns geöffnetes Dokument des tschechischen Verkehrsministeriums mit einem nationalen Anerkennungsdatum lag am 12.11.2026 nicht vor. Die Ministeriums-FAQ vom 30.06.2026 war ausdrücklich noch keine Anerkennung.",
-      "legal_en": "Tesla lists Czechia on the FSD Safety page as a market with a successful rollout. An official Ministry of Transport document with a national recognition date was not retrieved on 12 November 2026. The ministry FAQ of 30 June 2026 was explicitly not a recognition.",
+      "date": "2026-09-21",
+      "legal_de": "Tesla führt Tschechien auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Offizielle Freigabe am 21.09.2026 laut Rappy (geprüft 13.11.2026).",
+      "legal_en": "Tesla lists Czechia on the FSD Safety page as a market with a successful rollout. Officially approved on 21 Sep 2026 according to Rappy (checked 13 Nov 2026).",
       "source_url": "https://www.tesla.com/fsd/safety",
       "source_name": "Tesla, FSD Safety",
-      "notes_de": "Ein in Berichten genanntes Datum 21.09.2026 wird hier nicht als Startdatum gesetzt, weil die zugehörige Ministeriums-Seite bei der Prüfung nicht gefunden wurde.",
-      "notes_en": "A date of 21 September 2026 appears in news reports but is not set as a start date here, because the corresponding ministry page was not found during the review."
+      "date_precision": "day",
+      "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
       "iso2": "CD",
