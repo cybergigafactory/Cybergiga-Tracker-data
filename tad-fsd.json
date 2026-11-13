@@ -1555,12 +1555,12 @@
       "name_en": "Puerto Rico",
       "region": "americas",
       "status": "approved",
-      "date": "2025-02",
-      "legal_de": "Tesla führt Puerto Rico auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
-      "legal_en": "Tesla lists Puerto Rico on the FSD Safety page as a market with a successful rollout. Start date according to Rappy (checked 13 Nov 2026). The driver remains responsible.",
+      "date": "2025-02-11",
+      "legal_de": "Tesla führt Puerto Rico auf der Seite FSD Safety als Markt mit erfolgreicher Einführung auf. Startdatum laut Rappy: erste belegbare FSD-Fahrt in Puerto Rico am 11.02.2025 (geprüft 13.11.2026). Der Fahrer bleibt verantwortlich.",
+      "legal_en": "Tesla lists Puerto Rico on the FSD Safety page as a market with a successful rollout. Start date according to Rappy: first documented FSD drive in Puerto Rico on 11 Feb 2025 (checked 13 Nov 2026). The driver remains responsible.",
       "source_url": "https://www.tesla.com/fsd/safety",
       "source_name": "Tesla, FSD Safety",
-      "date_precision": "month",
+      "date_precision": "day",
       "date_source": "Rappy, geprüft 13.11.2026"
     },
     {
