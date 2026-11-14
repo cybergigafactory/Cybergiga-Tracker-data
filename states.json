@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "last_updated": "2026-11-14T03:21:52Z",
+  "last_updated": "2026-11-14T22:31:13Z",
   "title": "Tesla-Robotaxis nach Bundesstaat",
   "metric": "Zugelassene Tesla-Robotaxis, soweit amtlich belegt. Das ist nicht die Zahl der Autos auf der Straße.",
   "y_axis": "Die Y-Achse richtet sich nach dem Staat mit der höchsten belegten Zahl (aktuell Texas).",
@@ -15,7 +15,7 @@
       "id": "TX",
       "name": "Texas",
       "color": "#FF6A00",
-      "current": 1303,
+      "current": 1306,
       "cybercab_current": 573,
       "as_of": "2026-11-14",
       "status": "offiziell und live",
@@ -307,7 +307,7 @@
         },
         {
           "date": "2026-11-14",
-          "value": 1303,
+          "value": 1306,
           "dash": false,
           "status": "offiziell und live",
           "origin": "cybergiga-snapshot",
