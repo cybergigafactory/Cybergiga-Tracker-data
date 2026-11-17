@@ -1,18 +1,18 @@
 {
   "ok": true,
-  "registered_total": 573,
-  "delta_1d": 0,
+  "registered_total": 773,
+  "delta_1d": 200,
   "delta_1w": null,
-  "delta_total_1d": 0,
-  "delta_total_1w": 4,
-  "delta_model_y_1d": 0,
+  "delta_total_1d": 201,
+  "delta_total_1w": 205,
+  "delta_model_y_1d": 1,
   "delta_model_y_1w": null,
   "delta_basis": "Vergleich mit dem Stand am Ende des UTC-Vortags bzw. vor 7 UTC-Tagen (letzter bekannter Wert an oder vor dem Stichtag). delta_total_* nutzt dieselbe Texas-Reihe wie die Linie in states.json.",
-  "last_updated": "2026-11-17T04:35:48Z",
+  "last_updated": "2026-11-17T22:57:07Z",
   "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
   "source_name": "Texas DMV (TxMCCS)",
-  "tesla_registered_tx": 1306,
-  "model_y_registered_tx": 733,
+  "tesla_registered_tx": 1507,
+  "model_y_registered_tx": 734,
   "unclassified_vin_count": 0,
   "vin_prefix_cybercab": "5YJAJEEU",
   "note": "Zulassungen von Cybercabs in Texas. Das ist nicht die Zahl der Autos auf der Straße und nicht nach Stadt aufgeteilt.",
@@ -56,9 +56,9 @@
     },
     {
       "date": "2026-11-17",
-      "registered_total": 573,
-      "tesla_total": 1306,
-      "model_y": 733
+      "registered_total": 773,
+      "tesla_total": 1507,
+      "model_y": 734
     }
   ]
 }
