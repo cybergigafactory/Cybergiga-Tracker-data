@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "last_updated": "2026-11-13T12:40:00Z",
+  "last_updated": "2026-11-22T21:40:00Z",
   "title": "TAD/FSD",
   "countries": [
     {
@@ -933,12 +933,15 @@
       "name_de": "Italien",
       "name_en": "Italy",
       "region": "europe",
-      "status": "none",
-      "date": null,
-      "legal_de": null,
-      "legal_en": null,
-      "source_url": null,
-      "source_name": null
+      "status": "approved",
+      "date": "2026-11-19",
+      "legal_de": "Die italienische Motorizzazione hat am 19. November 2026 nach technischer Prüfung die niederländische vorläufige Typgenehmigung für Tesla Assisted Driving anerkannt. Das Verkehrsministerium MIT hat das am 20. November 2026 bekanntgegeben. Der Fahrer bleibt verantwortlich, muss die Hände am Lenkrad halten und jederzeit eingreifen können. Eine EU-weite Entscheidung steht noch aus.",
+      "legal_en": "Italy's Motorizzazione recognised the Dutch provisional type approval for Tesla Assisted Driving on 19 November 2026 after technical checks, as the Ministry of Infrastructure and Transport (MIT) announced on 20 November 2026. The driver remains responsible, must keep hands on the wheel and be ready to intervene. An EU-wide decision is still pending.",
+      "source_url": "https://www.ansa.it/canale_motori/notizie/new_tech/2026/11/20/salvini-da-mit-via-libera-a-omologazione-provvisoria-sistema-guida-assistita-tesla_2b53f01f-99ee-4405-9972-47b480389e46.html",
+      "source_name": "ANSA, Mitteilung des MIT, 20.11.2026",
+      "notes_de": "Laut MIT ist Italien der zwölfte EU-Staat mit Freigabe. Die MIT-Mitteilung trägt den Titel „Guida Assistita, via libera del MIT al Sistema Tesla“.",
+      "notes_en": "According to MIT, Italy is the twelfth EU member state to approve. The MIT notice is titled 'Guida Assistita, via libera del MIT al Sistema Tesla'.",
+      "date_precision": "day"
     },
     {
       "iso2": "CI",
