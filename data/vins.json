@@ -1,12 +1,12 @@
 {
   "ok": true,
-  "last_updated": "2026-11-17T22:57:07Z",
+  "last_updated": "2026-11-25T04:55:38Z",
   "first_snapshot_at": "2026-11-11T11:46:49Z",
   "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
   "company_id": "81edcff1-8a6e-4ed0-be1f-60668515e223",
   "company_name": "Tesla Robotaxi, LLC",
-  "registered_total": 773,
-  "tesla_registered_tx": 1507,
+  "registered_total": 822,
+  "tesla_registered_tx": 1556,
   "model_y_registered_tx": 734,
   "unclassified_vin_count": 0,
   "vin_prefix_cybercab": "5YJAJEEU",
@@ -300,6 +300,10 @@
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
     {
+      "vin": "5YJAJEEU0VA004632",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
       "vin": "5YJAJEEU0VA004680",
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
@@ -578,6 +582,26 @@
     {
       "vin": "5YJAJEEU1VA004624",
       "first_seen_at": "2026-11-17T22:57:07Z"
+    },
+    {
+      "vin": "5YJAJEEU1VA004767",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU1VA004784",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU1VA004803",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU1VA004820",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU1VA004834",
+      "first_seen_at": "2026-11-25T04:55:38Z"
     },
     {
       "vin": "5YJAJEEU2TA001468",
@@ -872,6 +896,10 @@
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
     {
+      "vin": "5YJAJEEU2VA004762",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
       "vin": "5YJAJEEU3TA002449",
       "first_seen_at": "2026-11-11T11:46:49Z"
     },
@@ -1156,6 +1184,26 @@
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
     {
+      "vin": "5YJAJEEU3VA004768",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU3VA004818",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU3VA004835",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU3VA004849",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU3VA004852",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
       "vin": "5YJAJEEU4TA001682",
       "first_seen_at": "2026-11-11T11:46:49Z"
     },
@@ -1428,6 +1476,22 @@
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
     {
+      "vin": "5YJAJEEU4VA004679",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU4VA004682",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU4VA004732",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU4VA004763",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
       "vin": "5YJAJEEU5TA002405",
       "first_seen_at": "2026-11-11T11:46:49Z"
     },
@@ -1694,6 +1758,38 @@
     {
       "vin": "5YJAJEEU5VA004626",
       "first_seen_at": "2026-11-17T22:57:07Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004643",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004674",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004710",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004786",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004805",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004819",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004836",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU5VA004853",
+      "first_seen_at": "2026-11-25T04:55:38Z"
     },
     {
       "vin": "5YJAJEEU6TA001442",
@@ -1980,6 +2076,26 @@
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
     {
+      "vin": "5YJAJEEU6VA004697",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU6VA004747",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU6VA004750",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU6VA004764",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU6VA004800",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
       "vin": "5YJAJEEU7TA002406",
       "first_seen_at": "2026-11-11T11:46:49Z"
     },
@@ -2226,6 +2342,34 @@
     {
       "vin": "5YJAJEEU7VA004627",
       "first_seen_at": "2026-11-17T22:57:07Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004644",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004675",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004711",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004725",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004742",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004806",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU7VA004837",
+      "first_seen_at": "2026-11-25T04:55:38Z"
     },
     {
       "vin": "5YJAJEEU8TA001670",
@@ -2540,6 +2684,10 @@
       "first_seen_at": "2026-11-17T22:57:07Z"
     },
     {
+      "vin": "5YJAJEEU8VA004765",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
       "vin": "5YJAJEEU9TA001385",
       "first_seen_at": "2026-11-11T11:46:49Z"
     },
@@ -2810,6 +2958,38 @@
     {
       "vin": "5YJAJEEU9VA004614",
       "first_seen_at": "2026-11-17T22:57:07Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004645",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004662",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004676",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004709",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004712",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004726",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004743",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEU9VA004838",
+      "first_seen_at": "2026-11-25T04:55:38Z"
     },
     {
       "vin": "5YJAJEEUXTA001878",
@@ -3102,6 +3282,22 @@
     {
       "vin": "5YJAJEEUXVA004623",
       "first_seen_at": "2026-11-17T22:57:07Z"
+    },
+    {
+      "vin": "5YJAJEEUXVA004749",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEUXVA004816",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEUXVA004833",
+      "first_seen_at": "2026-11-25T04:55:38Z"
+    },
+    {
+      "vin": "5YJAJEEUXVA004850",
+      "first_seen_at": "2026-11-25T04:55:38Z"
     },
     {
       "vin": "7SAYGDEE0TF541293",
