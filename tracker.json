@@ -8,7 +8,7 @@
   "delta_model_y_1d": 0,
   "delta_model_y_1w": 0,
   "delta_basis": "Vergleich mit dem Stand am Ende des UTC-Vortags bzw. vor 7 UTC-Tagen (letzter bekannter Wert an oder vor dem Stichtag). delta_total_* nutzt dieselbe Texas-Reihe wie die Linie in states.json.",
-  "last_updated": "2026-11-27T22:02:41Z",
+  "last_updated": "2026-11-28T03:58:17Z",
   "source_url": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
   "source_name": "Texas DMV (TxMCCS)",
   "tesla_registered_tx": 1841,
@@ -116,6 +116,12 @@
     },
     {
       "date": "2026-11-27",
+      "registered_total": 1107,
+      "tesla_total": 1841,
+      "model_y": 734
+    },
+    {
+      "date": "2026-11-28",
       "registered_total": 1107,
       "tesla_total": 1841,
       "model_y": 734
